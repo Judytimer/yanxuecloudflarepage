@@ -25,6 +25,17 @@ export default {
           blue: '#E3F2FD',       // 卡片边框蓝色
           orange: '#FFF3E0',     // 卡片边框橙色
         },
+        // 兼容旧的颜色类名
+        neutral: {
+          dark: '#2D5016',       // 深墨绿
+          medium: '#4A6B3A',     // 中墨绿
+          light: '#E8F0E0',      // 浅纸色
+        },
+        primary: {
+          DEFAULT: '#2D5016',    // 主色（深墨绿）
+          dark: '#1A3009',       // 深色变体
+          light: '#E8F0E0',      // 浅色变体
+        },
       },
       fontFamily: {
         sans: [

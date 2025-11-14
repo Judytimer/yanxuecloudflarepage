@@ -17,8 +17,8 @@ const borderClasses = {
 
 export default function PainPointCard({
   title,
-  description,
-  question,
+  description: _description,
+  question: _question,
   color,
   icon,
   illustration,
