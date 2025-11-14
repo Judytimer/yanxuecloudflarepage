@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>插画预览 - Pixso 设计参考</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+        .illustrations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .illustration-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .illustration-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        .illustration-card h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .illustration-card .svg-container {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 250px;
+        }
+        .illustration-card svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .illustration-card .description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .file-path {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: #333;
+            word-break: break-all;
+            margin-top: 10px;
+        }
+        .instructions {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+        .instructions h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .instructions ol {
+            margin-left: 20px;
+            line-height: 2;
+            color: #666;
+        }
+        .instructions li {
+            margin-bottom: 10px;
+        }
+        .instructions code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 插画预览 - Pixso 设计参考</h1>
+        
+        <div class="illustrations-grid">
+            <div class="illustration-card">
+                <h2>1. 写作业拖拉</h2>
+                <div class="svg-container">
+                    <img src="homework-delay.svg" alt="写作业拖拉" />
+                </div>
+                <div class="description">
+                    孩子每天写作业拖到很晚，总是磨蹭，效率低下
+                </div>
+                <div class="file-path">
+                    frontend/public/illustrations/homework-delay.svg
+                </div>
+            </div>
+            
+            <div class="illustration-card">
+                <h2>2. 考试焦虑</h2>
+                <div class="svg-container">
+                    <img src="exam-anxiety.svg" alt="考试焦虑" />
+                </div>
+                <div class="description">
+                    一提到考试就紧张，害怕失败，影响正常发挥
+                </div>
+                <div class="file-path">
+                    frontend/public/illustrations/exam-anxiety.svg
+                </div>
+            </div>
+            
+            <div class="illustration-card">
+                <h2>3. 缺乏学习动力</h2>
+                <div class="svg-container">
+                    <img src="lack-motivation.svg" alt="缺乏学习动力" />
+                </div>
+                <div class="description">
+                    孩子总是问为什么要学习，对任何科目都提不起兴趣
+                </div>
+                <div class="file-path">
+                    frontend/public/illustrations/lack-motivation.svg
+                </div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h2>📋 如何在 Pixso 中打开这些 SVG 文件</h2>
+            <ol>
+                <li>打开 <strong>Pixso 桌面应用</strong></li>
+                <li>点击菜单：<strong>文件 → 导入 → 导入文件</strong></li>
+                <li>选择以下文件路径：
+                    <br><code>/home/judytimer/cloudflare/frontend/public/illustrations/homework-delay.svg</code>
+                    <br><code>/home/judytimer/cloudflare/frontend/public/illustrations/exam-anxiety.svg</code>
+                    <br><code>/home/judytimer/cloudflare/frontend/public/illustrations/lack-motivation.svg</code>
+                </li>
+                <li>或者直接<strong>拖拽 SVG 文件</strong>到 Pixso 窗口中</li>
+                <li>在 Pixso 中编辑和优化设计</li>
+                <li>完成后导出为 SVG 格式，替换原文件</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
+

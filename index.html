@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antech Learning Assistant - AI学习辅导助手</title>
+    <!-- 华文彩云 - 治愈风格 -->
+    <style>
+      /* 加载华文彩云字体 */
+      @font-face {
+        font-family: 'HuaWenCaiYun';
+        src: url('/fonts/华文彩云.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      /* 加载新蒂剪纸体（备用） */
+      @font-face {
+        font-family: 'XinDiJianZhi';
+        src: url('/fonts/新蒂剪纸体.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      /* 全局字体设置 - 治愈风格 */
+      body {
+        font-family: 'HuaWenCaiYun', 'XinDiJianZhi', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', 'STHeiti', 'SimHei', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #2D5016;
+      }
+      /* 确保所有文本都使用治愈字体 */
+      * {
+        font-family: inherit;
+      }
+      /* 仙人掌纹路背景元素 - 水墨风格渐变 */
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+          radial-gradient(circle at 10% 20%, rgba(45, 80, 22, 0.04) 0%, transparent 50%),
+          radial-gradient(circle at 80% 80%, rgba(74, 107, 58, 0.04) 0%, transparent 50%),
+          radial-gradient(circle at 40% 60%, rgba(107, 142, 90, 0.03) 0%, transparent 50%),
+          radial-gradient(circle at 90% 30%, rgba(45, 80, 22, 0.03) 0%, transparent 50%),
+          radial-gradient(circle at 20% 70%, rgba(74, 107, 58, 0.02) 0%, transparent 50%),
+          radial-gradient(circle at 70% 20%, rgba(107, 142, 90, 0.02) 0%, transparent 50%);
+        background-size: 600px 600px, 700px 700px, 500px 500px, 650px 650px, 550px 550px, 580px 580px;
+        background-position: 0% 0%, 100% 100%, 50% 50%, 100% 0%, 20% 80%, 80% 20%;
+        pointer-events: none;
+        z-index: 0;
+        animation: float 20s ease-in-out infinite;
+      }
+      /* 仙人掌装饰图案 */
+      body::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+          url('/illustrations/cactus-pattern.svg');
+        background-size: 500px 500px;
+        background-position: 0% 0%;
+        background-repeat: repeat;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.15;
+        animation: drift 30s linear infinite;
+      }
+      /* 浮动动画 */
+      @keyframes float {
+        0%, 100% {
+          transform: translate(0, 0);
+        }
+        50% {
+          transform: translate(20px, -20px);
+        }
+      }
+      /* 漂移动画 */
+      @keyframes drift {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 100% 100%;
+        }
+      }
+      /* 确保内容在背景之上 */
+      #root {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
